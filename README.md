@@ -1,5 +1,12 @@
 # CoronaApiApp
 
+
+1) Sidebar: https://www.youtube.com/watch?v=5uC5vdjifE4
+2) Promises for loading
+3) Country in a Sidebar
+4) Content in a main
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
 
 ## Development server
