@@ -2,18 +2,19 @@
     <div class="side-bar">
         <div class="card">
             <div class="card-body">
-                <p class="Selected" *ngIf="selectedShoe.length > 0" [ngClass]="{shoeSelect: selectedShoe.length > 0}">
+                <p class="Selected" *ngIf="selectedCountry.length > 0" [ngClass]="{countrySelected: selectedCountry.length > 0}">
                     <span class="countrySelect">Country Selected:</span>
                     <button (click)="cancelCountry()" class="btn btn-secondary btn-sm">
                         <img class="cancel" height="20" src="../../assets/icons/logo/cancel.png" alt="x">
-                        {{ selectedShoe }}
+                        <span class="fs-sm">{{ selectedCountry }}</span>
                     </button>
                 </p>
             </div>
         </div>
-        <mat-selection-list class="list-items" #shoes [multiple]="false">
-            <mat-list-option (click)="objectCheck(shoe)" class="list-item" *ngFor="let shoe of typesOfShoes">
-              {{ shoe }}
+        <mat-selection-list class="list-items" #country [multiple]="false">
+            <mat-list-option (click)="objectCheck(country)" class="list-item" *ngFor="let country of countries">
+                {{ country }}
+                <mat-divider></mat-divider>
             </mat-list-option>
           </mat-selection-list>
           
@@ -22,5 +23,22 @@
             <div class="list-item">Item</div>
             <div class="list-item">Item</div>
         </div> -->
+
+        <div class="mt-2 pt-1">
+            <div class="container">
+                <div class="row mt-2">
+                    <div class="col-md-12">
+                        <a target="_blank" href="https://github.com/zaimeali/ngCovid" style="color: white;" class="btn btn-success btn-block link">
+                            Want to Contribute?
+                            <img style="margin-top: -2px !important;" height="23" src="../../assets/icons/logo/code.png" alt="Contribute Icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <app-content></app-content>
     </div>
 </div>

@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ApiService } from '../api.service';
+
+import { Countries } from './country.model';
+
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
@@ -7,26 +11,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  typesOfShoes: string[] = [
-    'Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers',
-    'Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers',
-    'Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers',
-    'Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'
-  ];
-  selectedShoe: string = '';
+  countries: any = [];
+  selectedCountry: string = '';
 
-  constructor() { }
+  constructor(private _apiService: ApiService) { }
 
   ngOnInit(): void {
+    this._apiService.getCountries().subscribe((data) => {
+      this.countries = data['response'],
+      console.log(data['response'])
+    });
   }
 
   objectCheck(data){
     console.log(data);
-    this.selectedShoe = data;
+    this.selectedCountry = data;
   }
 
   cancelCountry(){
-    this.selectedShoe = '';
+    this.selectedCountry = '';
   }
 
 }

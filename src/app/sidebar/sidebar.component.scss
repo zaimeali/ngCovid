@@ -14,24 +14,30 @@
     padding-top: 20px;
 }
 
-.list-items{
-    // padding-top: 50px;
-}
+// .list-items{
+//     // padding-top: 50px;
+// }
 
 .list-item{
-    font-size: 20px;
-    color: white;
+    font-size: 16px;
+    color: #343a40;
     padding: 10px;
 }
 
 // Mat Selection List
 mat-selection-list {
-    max-height: 300px;
-    border: 3px solid green;
+    max-height: 450px;
+    border: 3px solid #888888;
     overflow: auto;
     margin-right: 10px;
     margin-left: 10px;
     border-radius: 10px;
+    background-color: #f8f9fa;
+}
+
+mat-list-option{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
 }
 
 .Selected{
@@ -39,10 +45,14 @@ mat-selection-list {
     margin-bottom: 0;
 }
 
-.shoeSelect{
+.countrySelected{
     margin-top: -14px !important;
     margin-bottom: -14px !important;
 }
+
+// .fs-sm{
+    // font-size: 12px;
+// }
 
 .card{
     margin-right: 10px;
@@ -53,11 +63,15 @@ mat-selection-list {
 .cancel{
     margin-top: -12px;
     margin-left: -6px;
-    margin-right: -6px;
+    margin-right: -2px;
 }
 
 .countrySelect{
     font-weight: 600;
     font-family: 'Noto Sans HK', sans-serif;
     line-height: 26px;
+}
+
+.link:hover{
+
 }
