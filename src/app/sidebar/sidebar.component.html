@@ -1,1 +1,26 @@
-<p>sidebar works!</p>
+<div class="page-container">
+    <div class="side-bar">
+        <div class="card">
+            <div class="card-body">
+                <p class="Selected" *ngIf="selectedShoe.length > 0" [ngClass]="{shoeSelect: selectedShoe.length > 0}">
+                    <span class="countrySelect">Country Selected:</span>
+                    <button (click)="cancelCountry()" class="btn btn-secondary btn-sm">
+                        <img class="cancel" height="20" src="../../assets/icons/logo/cancel.png" alt="x">
+                        {{ selectedShoe }}
+                    </button>
+                </p>
+            </div>
+        </div>
+        <mat-selection-list class="list-items" #shoes [multiple]="false">
+            <mat-list-option (click)="objectCheck(shoe)" class="list-item" *ngFor="let shoe of typesOfShoes">
+              {{ shoe }}
+            </mat-list-option>
+          </mat-selection-list>
+          
+        <!-- <div class="list-items">
+            <div class="list-item">Item</div>
+            <div class="list-item">Item</div>
+            <div class="list-item">Item</div>
+        </div> -->
+    </div>
+</div>

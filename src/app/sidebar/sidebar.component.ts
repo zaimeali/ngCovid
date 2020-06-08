@@ -7,9 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
+  typesOfShoes: string[] = [
+    'Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers',
+    'Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers',
+    'Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers',
+    'Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'
+  ];
+  selectedShoe: string = '';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  objectCheck(data){
+    console.log(data);
+    this.selectedShoe = data;
+  }
+
+  cancelCountry(){
+    this.selectedShoe = '';
   }
 
 }
