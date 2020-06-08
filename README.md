@@ -5,7 +5,6 @@
 2) Promises for loading
 3) Country in a Sidebar
 4) Content in a main
-5) Footer do First
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
