@@ -5,6 +5,7 @@
 2) Promises for loading
 3) Content in a main
 4) For Animation: https://loading.io/css/
+5) Sidebar toggle when smaller than 768px
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
