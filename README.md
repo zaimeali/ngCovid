@@ -3,9 +3,8 @@
 
 1) Sidebar: https://www.youtube.com/watch?v=5uC5vdjifE4
 2) Promises for loading
-3) Animation in a contribute button
-4) Content in a main
-5) For Animation: https://loading.io/css/
+3) Content in a main
+4) For Animation: https://loading.io/css/
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
